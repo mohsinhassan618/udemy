@@ -60,7 +60,8 @@ jQuery(function($){
             utensils:       $('#r_inputUtensils').val(),
             level:          $('#r_inputLevel').val(),
             meal_type:      $('#r_inputMealType').val(),
-            attachment_id:  $("#r_inputImgID").val()
+            attachment_id:  $("#r_inputImgID").val(),
+            video_url:      $("#r_inputVideoURL").val()
 
         };
 

@@ -22,6 +22,7 @@ function r_submit_user_recipe_function() {
     $recipe_data['utensils']        =        sanitize_text_field($_POST['utensils']);
     $recipe_data['level']           =        sanitize_text_field($_POST['level']);
     $recipe_data['meal_type']       =        sanitize_text_field($_POST['meal_type']);
+    $recipe_data['video_url']       =        esc_url_raw($_POST['r_inputVideoURL']);
 
     $post_id                        =        wp_insert_post([
         'post_content'              =>       $content,
