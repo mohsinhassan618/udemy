@@ -46,6 +46,7 @@ include ('includes/admin/menus.php');
 include ('includes/admin/options-page.php');
 include ('includes/process/save-options.php');
 include ('includes/admin/origin-fields.php');
+include ('includes/textdomian.php');
 
 
 
@@ -75,6 +76,7 @@ add_action('origin_add_form_fields','r_origin_add_form_fields');
 add_action('create_origin','r_save_origin_meta');
 add_action('origin_edit_form_fields','r_origin_edit_form_fields');
 add_action('edited_origin','r_save_origin_meta');
+add_action('plugins_loaded','r_load_textdomain');
 
 
 

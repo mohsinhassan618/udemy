@@ -44,7 +44,7 @@
     </div>
 <!--    <script>-->
 <!--        function temp_function() {-->
-<!--            console.debug(stinymce.activeEditor.getContent());-->
+<!--            console.debug(tinymce.activeEditor.getContent());-->
 <!--        }-->
 <!--    </script>-->
 </form>

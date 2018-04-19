@@ -22,7 +22,8 @@ include (get_template_directory() . '/includes/mobile.php');
 include (get_template_directory() . '/includes/admin/author-fields.php');
 include (get_template_directory() . '/includes/avatar.php');
 include (get_template_directory() . '/includes/home-query.php');
-
+require_once get_template_directory() . '/includes/libs/class-tgm-plugin-activation.php';
+include (get_template_directory() . '/includes/register-plugins.php');
 
 
 // Hooks
@@ -46,5 +47,7 @@ add_action('personal_options_update','ju_save_extra_profile_fields');
 add_action('edit_user_profile_update','ju_save_extra_profile_fields');
 add_filter('avatar_defaults','ju_new_avatar');
 add_action('pre_get_posts','ju_modify_homepage_query');
+add_action( 'tgmpa_register', 'ju_register_required_plugins' );
+
 
 // Shortcodes

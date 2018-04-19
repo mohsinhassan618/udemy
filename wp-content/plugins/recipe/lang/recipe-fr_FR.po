@@ -1,0 +1,181 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Recipe\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-04-19 10:25+0000\n"
+"PO-Revision-Date: 2018-04-19 03:33-0700\n"
+"Language-Team: \n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.6\n"
+"Last-Translator: \n"
+"Language: fr\n"
+
+#: includes/init.php:23
+msgid "A custom post type for recipes."
+msgstr "Ajouter un type d'article personnalisé"
+
+#. Description of the plugin
+msgid ""
+"A simple wordpress plugin that allows users to create recipes and rate those "
+"recipes"
+msgstr ""
+"Un plugin wordpress simple qui permet aux utilisateurs de créer des recettes "
+"et des taux ces recettes"
+
+#: includes/admin/origin-fields.php:10 includes/admin/origin-fields.php:29
+msgid "A Url a user can click to learn more information about this origin"
+msgstr ""
+"Une Url, un utilisateur peut cliquer pour en savoir plus d’informations sur "
+"cette origine"
+
+#: includes/init.php:9
+msgid "Add New"
+msgstr "Ajouter un nouveau"
+
+#: includes/init.php:10
+msgid "Add New Recipe"
+msgstr "Ajouter une nouvelle recette"
+
+#: includes/init.php:14
+msgid "All Recipes"
+msgstr "Toutes les recettes"
+
+#: includes/admin/columns.php:8
+msgid "Author"
+msgstr "Auteur"
+
+#: includes/admin/columns.php:11
+msgid "Average Rating"
+msgstr "Évaluation moyenne"
+
+#: includes/admin/columns.php:9
+msgid "Categories"
+msgstr "Catégories"
+
+#: includes/process/filter-content.php:32
+msgid "Cooking Time"
+msgstr "Temps de cuisson"
+
+#: includes/admin/columns.php:12
+msgid "Date"
+msgstr ""
+
+#: includes/init.php:12
+msgid "Edit Recipe"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "http://udemy.com"
+msgstr ""
+
+#: includes/process/filter-content.php:31
+msgid "Ingredients"
+msgstr ""
+
+#: includes/process/filter-content.php:34
+msgid "Level"
+msgstr ""
+
+#: includes/process/filter-content.php:35
+msgid "Meal Type"
+msgstr ""
+
+#: includes/admin/origin-fields.php:6 includes/admin/origin-fields.php:23
+msgid "More Info Url"
+msgstr ""
+
+#: includes/init.php:11
+msgid "New Recipe"
+msgstr ""
+
+#: includes/init.php:18
+msgid "No Recipes found in Trash."
+msgstr ""
+
+#: includes/init.php:17
+msgid "No Recipes found."
+msgstr ""
+
+#: includes/init.php:44
+msgid "Origin"
+msgstr ""
+
+#: includes/process/filter-content.php:39
+msgid "Origin:"
+msgstr ""
+
+#: includes/init.php:16
+msgid "Parent Recipes:"
+msgstr ""
+
+#: includes/process/filter-content.php:36
+msgid "Rating"
+msgstr ""
+
+#: includes/admin/columns.php:10
+msgid "Ratings Count"
+msgstr ""
+
+#. Name of the plugin
+#: includes/init.php:6
+msgid "Recipe"
+msgstr ""
+
+#: includes/activate.php:45
+msgid "Recipe Author"
+msgstr ""
+
+#: includes/admin/create-metaboxes.php:7
+msgid "Recipe Options"
+msgstr ""
+
+#: includes/admin/options-page.php:13
+msgid "Recipe Settings"
+msgstr ""
+
+#: includes/init.php:5 includes/init.php:7 includes/init.php:8
+msgid "Recipes"
+msgstr ""
+
+#: includes/init.php:15
+msgid "Search Recipes"
+msgstr ""
+
+#: includes/admin/columns.php:7
+msgid "Title"
+msgstr ""
+
+#. Author of the plugin
+msgid "Udemy"
+msgstr ""
+
+#: includes/admin/options-page.php:49
+msgid "Update"
+msgstr ""
+
+#: includes/admin/options-page.php:31
+msgid "User login required for rating recipes"
+msgstr ""
+
+#: includes/admin/options-page.php:40
+msgid "User login required for submitting recipes"
+msgstr ""
+
+#: includes/process/filter-content.php:33
+msgid "Utensils"
+msgstr ""
+
+#: includes/init.php:13
+msgid "View Recipe"
+msgstr ""
+
+#: includes/process/save-options.php:7
+msgid "you are not allowed to access this page some custom"
+msgstr ""
+
+#: includes/activate.php:8
+msgid "You must update Wordpress touse this plugin"
+msgstr ""
