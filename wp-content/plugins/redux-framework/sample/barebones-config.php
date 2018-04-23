@@ -32,8 +32,8 @@
         //Specify if the admin menu should appear or not. Options: menu or submenu (Under appearance only)
         'allow_sub_menu'       => true,
         // Show the sections below the admin menu item or not
-        'menu_title'           => __( 'Sample Options', 'redux-framework-demo' ),
-        'page_title'           => __( 'Sample Options', 'redux-framework-demo' ),
+        'menu_title'           =>  __( 'Sample Options', 'redux-framework-demo' ),
+        'page_title'           =>  __( 'Sample Options', 'redux-framework-demo' ),
         // You will need to generate a Google API key to use this feature.
         // Please visit: https://developers.google.com/fonts/docs/developer_api#Auth
         'google_api_key'       => '',
@@ -51,14 +51,14 @@
         // Choose an priority for the admin bar menu
         'global_variable'      => '',
         // Set a different name for your global variable other than the opt_name
-        'dev_mode'             => true,
+        'dev_mode'             => FALSE,
         // Show the time the page took to load, etc
         'update_notice'        => true,
         // If dev_mode is enabled, will notify developer of updated versions available in the GitHub Repo
         'customizer'           => true,
         // Enable basic customizer support
         //'open_expanded'     => true,                    // Allow you to start the panel in an expanded way initially.
-        //'disable_save_warn' => true,                    // Disable the save warning when a user changes a field
+        'disable_save_warn' => true,                    // Disable the save warning when a user changes a field
 
         // OPTIONAL -> Give you extra features
         'page_priority'        => null,
@@ -81,8 +81,7 @@
         // If true, shows the default value next to each field that is not the default value.
         'default_mark'         => '',
         // What to print by the field's title if the value shown is default. Suggested: *
-        'show_import_export'   => true,
-        // Shows the Import/Export panel when not used as a field.
+
 
         // CAREFUL -> These options are for advanced use only
         'transient_time'       => 60 * MINUTE_IN_SECONDS,
@@ -99,6 +98,10 @@
         'use_cdn'              => true,
         // If you prefer not to use the CDN for Select2, Ace Editor, and others, you may download the Redux Vendor Support plugin yourself and run locally or embed it in your code.
 
+        'show_import_export'   => true,
+        //'show_options_object' => false,
+        // Shows the Import/Export panel when not used as a field.
+        // 
         //'compiler'             => true,
 
         // HINTS
@@ -260,8 +263,11 @@
         'title' => __( 'Basic Fields', 'redux-framework-demo' ),
         'id'    => 'basic',
         'desc'  => __( 'Basic fields as subsections.', 'redux-framework-demo' ),
-        'icon'  => 'el el-home'
+        'icon'  => 'el el-home',
+         'subsection' => false,
     ) );
+    
+   
 
     Redux::setSection( $opt_name, array(
         'title'      => __( 'Text', 'redux-framework-demo' ),
@@ -279,8 +285,9 @@
             ),
         )
     ) );
-
-    Redux::setSection( $opt_name, array(
+    
+    
+        Redux::setSection( $opt_name, array(
         'title'      => __( 'Text Area', 'redux-framework-demo' ),
         'desc'       => __( 'For full documentation on this field, visit: ', 'redux-framework-demo' ) . '<a href="//docs.reduxframework.com/core/fields/textarea/" target="_blank">//docs.reduxframework.com/core/fields/textarea/</a>',
         'id'         => 'opt-textarea-subsection',
@@ -296,7 +303,31 @@
             ),
         )
     ) );
+        
+                Redux::setSection( $opt_name, array(
+        'title'      => __( 'Import Export', 'redux-framework-demo' ),
+        'desc'       => __( 'For full documentation on this field, visit: ', 'redux-framework-demo' ) . '<a href="//docs.reduxframework.com/core/fields/importexport/" target="_blank">//docs.reduxframework.com/core/fields/importexport/</a>',
+        'id'         => 'import-export',
+        'subsection' => true,
+        'fields'     => array(
+            array(
+                'id'            => 'opt-import-export',
+                'type'          => 'import_export',
+                'title'         => 'Import Export',
+                'subtitle'      => 'Save and restore your Redux options',
+                'full_width'    => false,
+            ),
+        )
+    ) );
+        
+        
 
+    
+
+
+
+
+    
     /*
      * <--- END SECTIONS
      */

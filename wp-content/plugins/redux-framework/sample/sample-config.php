@@ -123,7 +123,7 @@
         // If true, shows the default value next to each field that is not the default value.
         'default_mark'         => '',
         // What to print by the field's title if the value shown is default. Suggested: *
-        'show_import_export'   => true,
+        'show_import_export'   => false,
         // Shows the Import/Export panel when not used as a field.
 
         // CAREFUL -> These options are for advanced use only
@@ -774,7 +774,7 @@
                     'border-right'  => '3px',
                     'border-bottom' => '3px',
                     'border-left'   => '3px'
-                )
+                ),
             ),
             array(
                 'id'       => 'opt-header-border-expanded',
