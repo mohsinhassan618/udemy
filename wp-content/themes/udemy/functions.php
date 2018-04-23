@@ -25,6 +25,19 @@ include (get_template_directory() . '/includes/home-query.php');
 require_once get_template_directory() . '/includes/libs/class-tgm-plugin-activation.php';
 include (get_template_directory() . '/includes/register-plugins.php');
 
+if ( !class_exists( 'ReduxFramework' ) && file_exists( dirname( __FILE__ ) . '/ReduxFramework/ReduxCore/framework.php' ) ) {
+    require_once( dirname( __FILE__ ) . '/ReduxFramework/ReduxCore/framework.php' );
+}
+
+
+if ( !isset( $redux_demo ) && file_exists( dirname( __FILE__ ) . '/ReduxFramework/sample/sample-config.php' ) ) {
+    require_once( dirname( __FILE__ ) . '/ReduxFramework/sample/sample-config.php' );
+}
+
+//if ( !isset( $redux_demo ) && file_exists( dirname( __FILE__ ) . '/ReduxFramework/sample/barebones-config.php' ) ) {
+//    require_once( dirname( __FILE__ ) . '/ReduxFramework/sample/barebones-config.php' );
+//}
+
 
 // Hooks
 add_action('wp_enqueue_scripts','ju_enqueue');

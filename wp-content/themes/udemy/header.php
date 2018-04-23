@@ -17,6 +17,13 @@
 </head>
 
 <body  <?php body_class('no-transition stretched'); ?>  itemscope itemtype="http://schema.org/WebPage" >
+    <?php
+     global $redux_demo;
+     echo '<pre>';
+     print_r($redux_demo);
+     echo '</pre>';
+    ?>
+    
 
 <!-- Document Wrapper
 ============================================= -->
