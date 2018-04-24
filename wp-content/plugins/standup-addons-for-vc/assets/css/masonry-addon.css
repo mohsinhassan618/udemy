@@ -1,0 +1,90 @@
+/*
+VC custom masonry grid css
+*/
+
+.pt-custom-masonry-grid {
+    
+}
+h2.pt-custom-masonry-grid-title {
+    text-align: center;
+}
+/* clear fix */
+.pt-custom-masonry-grid:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+.pt-custom-masonry-grid-sizer,
+.pt-custom-masonry-grid-item {
+  width: 25%;
+}
+
+.pt-custom-masonry-grid-item {
+  float: left;
+}
+
+.pt-custom-masonry-grid-item img {
+  display: block;
+  max-width: 100%;
+}
+a.pt-custom-masonry-item-link figure {
+    position: relative;    
+}
+a.pt-custom-masonry-item-link figure:before {
+    content: attr(title);
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    opacity: 0;
+    transition: all linear 0.2s;
+}
+
+a.pt-custom-masonry-item-link figure:hover:before{
+    opacity: 1;
+}
+.pt-custom-masonry-grid-item {
+    padding: 15px;
+}
+.pt-custom-masonry-item-caption {
+  display: none;
+  margin: auto;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  font-family: 'Oswald', sans-serif !important;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 400;
+  right: 0;
+  left: 0;
+  transition: all linear 0.2s;
+  line-height: 35px;
+}
+.pt-custom-masonry-grid-item:hover .pt-custom-masonry-item-caption {
+    display: block;
+    z-index: 9999;
+}
+@media (max-width: 767px) { 
+    .pt-custom-masonry-grid-sizer,
+    .pt-custom-masonry-grid-item {
+       width: 100% !important;
+    }
+    .pt-custom-masonry-grid-item img {
+        width: 100%
+    }
+    a.pt-custom-masonry-item-link figure:before{
+        opacity: 1;
+    }
+    .pt-custom-masonry-grid-item .pt-custom-masonry-item-caption {
+        display: block;
+        z-index: 9999;
+    }
+}
